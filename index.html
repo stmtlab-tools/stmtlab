@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>stmtlab - bank statement PDF to Excel or CSV, in your browser</title><meta name="description" content="Convert a text-based bank statement PDF to CSV in your browser. Checks the balance on every row. Free beta. Nothing is uploaded."><style>body{font-family:system-ui,Segoe UI,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#222}h1{line-height:1.2}h2{margin-top:2rem}.n{color:#555;font-size:.9rem}</style></head><body>
+<h1>Bank statement PDF to Excel or CSV. Runs in your browser.</h1>
+<p>stmtlab turns a text-based bank statement PDF into a clean spreadsheet and checks that the numbers add up. If a row doesn't reconcile with the running balance, it is flagged and left out of the totals. It does not guess.</p>
+<p>Your PDF is processed by code running in your own browser tab. It is never uploaded, and the tool still works with the internet switched off.</p>
+<h2>Free beta</h2>
+<p>This is a free beta built by one person. It is not publicly downloadable yet: I am still fixing bank layouts, and I want to learn which ones fail before opening it up. Check back soon.</p>
+<h2>How it works</h2>
+<ol><li>Open the tool in Chrome or Edge and drop in one or more PDF statements.</li><li>See a status per file: read and reconciled, or needs review.</li><li>Download transactions.csv, a quarterly money in / money out summary, and a to_review.csv with any flagged rows.</li></ol>
+<h2>What it checks</h2>
+<ul><li>Opening balance + transactions = closing balance, or each row against the running balance.</li><li>Handles MM/DD and DD/MM dates, "Paid out / Paid in", debit/credit, withdrawals/deposits, CR/DR, and statements that show the date once per day.</li></ul>
+<h2>Honest limits</h2>
+<ul><li>Text PDFs only. Scanned images are not read (no OCR).</li><li>Tested on public sample statements and synthetic ones, plus one real statement. Many bank layouts are untested. If yours fails, it says so instead of guessing.</li><li>Tax figures are estimates and only in the Spain and Netherlands modes. Elsewhere you get money in, money out and net per quarter.</li><li>Not tax or accounting advice.</li></ul>
+<p class="n">Interface languages: English, Spanish (Spain), Spanish (Latin America).</p>
+</body></html>
