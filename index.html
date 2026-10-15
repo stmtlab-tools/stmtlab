@@ -3,7 +3,7 @@
 <p>stmtlab turns a text-based bank statement PDF into a clean spreadsheet and checks that the numbers add up. If a row doesn't reconcile with the running balance, it is flagged and left out of the totals. It does not guess.</p>
 <p>Your PDF is processed by code running in your own browser tab. It is never uploaded, and the tool still works with the internet switched off.</p>
 <h2>Free beta</h2>
-<p>This is a free beta built by one person. It is not publicly downloadable yet: I am still fixing bank layouts, and I want to learn which ones fail before opening it up. Check back soon.</p>
+<p>This is a free beta built by one person. <a href="app.html"><b>Open the tool</b></a> (it runs in your browser, nothing is uploaded), or download the zip from the <a href="https://github.com/stmtlab-tools/stmtlab/releases">releases page</a> to use it offline. I am still fixing bank layouts and want to learn which ones fail.</p>
 <h2>How it works</h2>
 <ol><li>Open the tool in Chrome or Edge and drop in one or more PDF statements.</li><li>See a status per file: read and reconciled, or needs review.</li><li>Download transactions.csv, a quarterly money in / money out summary, and a to_review.csv with any flagged rows.</li></ol>
 <h2>What it checks</h2>
@@ -11,4 +11,5 @@
 <h2>Honest limits</h2>
 <ul><li>Text PDFs only. Scanned images are not read (no OCR).</li><li>Tested on public sample statements and synthetic ones, plus one real statement. Many bank layouts are untested. If yours fails, it says so instead of guessing.</li><li>Tax figures are estimates and only in the Spain and Netherlands modes. Elsewhere you get money in, money out and net per quarter.</li><li>Not tax or accounting advice.</li></ul>
 <p class="n">Interface languages: English, Spanish (Spain), Spanish (Latin America).</p>
+<p class="n">Found a statement that fails? Tell us the bank and the warning (never the PDF): <a href="https://github.com/stmtlab-tools/stmtlab/issues">github.com/stmtlab-tools/stmtlab/issues</a></p>
 </body></html>
